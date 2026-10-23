@@ -10,8 +10,8 @@ egt = EasyGoogleTranslate()
 
 def main():
     parser = argparse.ArgumentParser(description="Google Translate Terminal Tool")
-    parser.add_argument("-f", "--from", dest="source", required=True, help="...")
-    parser.add_argument("-t", "--to", dest="target", required=True, help="...")
+    parser.add_argument("-f", "--from", dest="source", help="...", default="en")
+    parser.add_argument("-t", "--to", dest="target", help="...", default="tr")
     parser.add_argument("--file", help="...")
 
     args, unknownargs = parser.parse_known_args()

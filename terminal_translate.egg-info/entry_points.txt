@@ -1,2 +1,2 @@
 [console_scripts]
-translate = main:main
+translate = src.main:main
