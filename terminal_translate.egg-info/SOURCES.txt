@@ -1,0 +1,7 @@
+README.md
+setup.py
+terminal_translate.egg-info/PKG-INFO
+terminal_translate.egg-info/SOURCES.txt
+terminal_translate.egg-info/dependency_links.txt
+terminal_translate.egg-info/entry_points.txt
+terminal_translate.egg-info/top_level.txt

@@ -1,6 +1,9 @@
 import argparse
 
-from easygoogletranslate import EasyGoogleTranslate
+if __package__:
+    from .easygoogletranslate import EasyGoogleTranslate
+else:
+    from easygoogletranslate import EasyGoogleTranslate
 
 egt = EasyGoogleTranslate()
 
@@ -14,10 +17,12 @@ def main():
     args, unknownargs = parser.parse_known_args()
 
     if args.file:
-        pass
+        pass  # TODO: just add a helper that reads the file into a multiple lines string
     else:
         return egt.translate(
-            text=" ".join(unknownargs), target_language=args.target, source_language=args.source
+            text=" ".join(unknownargs),
+            target_language=args.target,
+            source_language=args.source,
         )
 
 
